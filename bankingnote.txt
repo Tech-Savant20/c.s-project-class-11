@@ -1,0 +1,455 @@
+print()
+print('welcome to SBI banking service')
+import random
+j1=[['MANISH YADAV',51689,495984,'mani186'],['PINKY',67364,86862,'14jk5'],['NEETI',71686,18818,'pof58d'],
+    ['TONY STARK',67835,18198,'zarvis1'],['RICHA',61786,59986,'rich45'],
+    ['JACK',15557,48846,'jf65'],['JOHN',57155,11684,'fkg55'],['SONI',68758,88185,'cv872fb']]
+O=1
+while O>0:
+    x=input('login or new-->')
+    if x == 'login':
+        z=int(input('enter account no-->'))
+        i=input('enter your password-->')
+        p=['Hgh58','gCh65','fDn68','ijR45']
+        h=random.choice(p)
+        print(h)
+        k=input('enter the code displayed above-->')
+        for y1 in range(0,8):
+            l=j1[y1][1]
+            if l == z and j1[y1][3] == i:
+                if k == h:
+                    print('welcome',j1[y1][0])
+                    O-=2
+                else:
+                    print('Invalid iterals')
+    elif x == 'new':
+        q=0
+        while q<1:
+            a1=a2=a3=a4=a5=0
+            while a1 < 1:
+                c1=0
+                m=['/',' ','.','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O',
+                'P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h',
+                'i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+                a=str(input('enter your full  name-->'))
+                b1=len(a)
+                for f in a:
+                    if f in m:
+                        c1+=1
+                        if b1==c1:
+                            a1+=1
+            while a2<1:
+                c2=0
+                m=['/',' ','.','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',
+                'S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n',
+                'o','p','q','r','s','t','u','v','w','x','y','z','1','2','3','4','5','6','7','8','9','0']
+                b=str(input('enter your address-->'))
+                b1=len(b)
+                for g in b:
+                    if g in m:
+                        c2+=1
+                        if b1==c2:
+                            a2+=1
+            while a3<1:
+                c3=0
+                m=['/',' ','.','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',
+                'S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n',
+                'o','p','q','r','s','t','u','v','w','x','y','z','1','2','3','4','5','6','7','8','9','0']
+                d=str(input('enter your job address-->'))
+                b1=len(d)
+                for r in d:
+                    if r in m:
+                        c3+=1
+                        if b1==c3:
+                            a3+=1
+            while a4<1:
+                c4=0
+                m=['1','2','3','4','5','6','7','8','9','0','.','/']
+                e=input('enter your D.O.B-->')
+                b1=len(e)
+                for p in e:
+                    if p in m:
+                        c4+=1
+                        if b1==c4:
+                            a4+=1
+            while a5<1:
+                c5=0
+                m=['1','2','3','4','5','6','7','8','9','0']
+                h=input('enter the amount to start account with-->')
+                b1=len(h)
+                for i in h:
+                    if i in m:
+                        c5+=1
+                        if b1==c5:
+                            a5+=1    
+            print()
+            print()
+            print('full name-->',a)
+            print('address-->',b)   
+            print('job address-->',d)
+            print('D.O.B-->',e)
+            print('balance-->',h)
+            p=['5166','5456','2156','6445','5153','6868','5356','6466']
+            print('your account no is-->',random.choice(p))
+            n=input('are you sure yes/no-->')
+            if n == 'yes':
+                q+=1
+                O-=2
+                print()
+                print('congratulation your account is created')
+                print('')
+                print('welcome-->',a)
+                print('')
+                h=int(h)
+                k=[a,b,h]
+                j1.append(k)
+                y1=8
+            elif n=='no':
+                q+=1
+                O-=2
+                print('try again')
+            else:
+                print('wrong input')
+    else:
+        print('wrong input')
+p=1
+while p>0:
+    print('what would you like to do')
+    print('')
+    print('for loan enter 1')
+    print('for deposit enter 2')
+    print('for EMI enter 3')
+    print('for life insurance enter 4')
+    print('for withdrawl enter 5')
+    print('to know your balance enter 6')
+    print('to exit enter 7')
+    a= int(input('enter-->'))
+    if a == 1:
+        print('for car loan enter 1')
+        print('for business loan enter 2')
+        print('for home loan enter 3')
+        b= int(input('enter 1 or 2 or 3-->'))
+        if b == 1:
+            o=int(input('enter your total monthly salary-->'))
+            c=int(input('enter amount required-->'))
+            d=int(input('enter time in year for which it is required-->'))
+            e=int(input('enter no of instalments made in a year-->'))
+            print('')
+            print('our rate is -->8.21%')
+            r=(8.21/e)*c
+            print('')
+            print('total amount to be paid is-->',r)
+            if 0.75*o>r:
+                p-=1
+                t=1
+                while t>0:
+                    d=input('do you want to take loan y/n-->')
+                    if d=='y':
+                        t-=1
+                        print('congralutation loan approved')
+                    elif d=='n':
+                        print('thank you')
+                        t-=1
+                    else:
+                        print('wrong input')
+            else:
+                print('sorry your monthly income is less than required')
+        if b == 2:
+            o=int(input('enter your total monthly salary-->'))
+            c=int(input('enter amount required-->'))
+            d=int(input('enter time in year for which it is required-->'))
+            e=int(input('enter no of instalments made in a year-->'))
+            print('our rate is -->12.32%')
+            r=(12.32/e)*c
+            print('total amount to be paid is-->',r+c)
+            if 0.75*o>(r+c)/(e*12):
+                p-=1
+                t=1
+                while t>0:
+                    d=input('do you want to take loan y/n-->')
+                    if d=='y':
+                        t-=1
+                        print('congralutation loan approved')
+                    elif d=='n':
+                        print('thank you')
+                        t-=1
+                    else:
+                        print('wrong input')
+            else:
+                print('sorry your monthly income is less than required')
+        if b == 3:
+           o=int(input('enter your total monthly salary-->'))
+           c=int(input('enter amount required-->'))
+           d=int(input('enter time in year for which it is required-->'))
+           e=int(input('enter no of instalments made in a year-->'))
+           print('our rate is -->10.2%')
+           r=(10.2/e)*c
+           print('total amount to be paid is-->',r)
+           if 0.75*o>r:
+               p-=1
+               t=1
+               while t>0:
+                   d=input('do you want to take loan y/n-->')
+                   if d=='y':
+                       t-=1
+                       print('congralutation loan approved')
+                   elif d=='n':
+                       print('thank you')
+                       t-=1
+                   else:
+                       print('wrong input')
+           else:
+               print('sorry your monthly income is less than required')
+    elif a == 2:
+        print('for deposit enter 1')
+        print('for F.D. enter 2')
+        j=int(input('enter-->'))
+        if j==1:
+            p-=1
+            print('balance-->',j1[y1][2])
+            x=int(input('enter amount to be deposite-->'))
+            print('new balance-->',x+j1[y1][2])
+        elif j==2:
+            s=int(input('amount-->'))
+            d=int(input('time in year-->'))
+            g=input('S.I/C.I-->')
+            if g =='S.I':
+                p-=1
+                print('our rate-->',3.6)
+                f=3.6
+                k=s*f*d*0.01
+                print('your interest is',k)
+                t=1
+                while t>0:
+                    d=input('do you want to continue y/n-->')
+                    if d=='y':
+                        t-=1
+                        print('congralutation F.D approved')
+                    elif d=='n':
+                        print('thank you')
+                        t-=1
+                    else:
+                        print('wrong input')
+            elif g=='C.I':
+                p-=1
+                print('our rate-->',2.4)
+                f=2.4
+                k=(s*(1+f/100))**d
+                print('your interest is',k)
+                t=1
+                while t>0:
+                    d=input('do you want to continue y/n-->')
+                    if d=='y':
+                        t-=1
+                        print('congralutation F.D approved')
+                    elif d=='n':
+                        print('thank you')
+                        t-=1
+                    else:
+                        print('wrong input')
+    elif a == 3:
+        print('for EMI on car press 1')
+        print('for EMI on phone press 2')
+        print('for EMI on other things press 3')
+        b= int(input('enter 1, 2 or 3-->'))
+        if b == 1:
+            c=int(input('enter price of car-->'))
+            d=int(input('enter time in months for EMI-->'))
+            j=int(input('enter your monthly income-->'))
+            f= 18.23
+            s=(f/100)*c
+            k=s+c
+            print('our rate(pa) is -->18.23%')
+            print('amount to be paid montly is-->',c/d)
+            print('total cost-->',k)
+            g=input('you want EMI yes/no-->')
+            if g == 'yes':
+                p-=1
+                if j>(c/d):
+                    print('congralutation EMI approved')
+        if b == 2:
+            c=int(input('enter price of mobile-->'))
+            d=int(input('enter time in months for EMI-->'))
+            j=int(input('enter your monthly income-->'))
+            f= 12.21
+            s=(f/100)*c
+            k=s+c
+            print('our rate(pa) is -->12.21%')
+            print('amount to be paid montly is-->',c/d)
+            print('total cost-->',k)
+            g=input('you want EMI yes/no-->')
+            if g == 'yes':
+                p-=1
+                if j>(c/d):
+                    print('congratulation EMI approved')
+        if b == 3:
+            c=int(input('enter price-->'))
+            d=int(input('enter time in months for EMI-->'))
+            j=int(input('enter your monthly income-->'))
+            f= 13.84
+            s=(f/100)*c
+            k=s+c
+            print('our rate(pa) is -->13.84%')
+            print('amount to be paid montly is-->',c/d)
+            print('total cost-->',k)
+            g=input('you want EMI yes/no-->')
+            if g == 'yes':
+                if j>(c/d):
+                    p-=1
+                    print('congralutation EMI approved')
+    elif a == 4:
+        b=int(input('enter your monthly salary-->'))
+        if b<=20000:
+            p-=1
+            print('for insurance of 100000 enter 1')
+            print('for insurance of 1000000 enter 2')
+            print('for insurance of 1crore+ enter 3')
+            c=int(input('enter-->'))
+            if c == 1:
+                print('the life insurance for you is at 200Rs pm')
+                t=0
+                while t<1:
+                    d=input('do you want to take insurance y/n-->')
+                    if d=='y':
+                        t+=1
+                        print('congralutation insurance approved')
+                    elif d=='n':
+                        print('thank you')
+                        t+=1
+                    else:
+                        print('wrong input')
+            elif c == 2:
+                print('the life insurance for you is at 500Rs pm')
+                t=0
+                while t<1:
+                    d=input('do you want to take insurance y/n-->')
+                    if d=='y':
+                        t+=1
+                        print('congralutation insurance approved')
+                    elif d=='n':
+                        print('thank you')
+                        t+=1
+                    else:
+                        print('wrong input')
+            elif c == 3:
+                print('the life insurance for you is at 1000Rs pm')
+                t=0
+                while t<1:
+                    d=input('do you want to take insurance y/n-->')
+                    if d=='y':
+                        t+=1
+                        print('congralutation insurance approved')
+                    elif d=='n':
+                        print('thank you')
+                        t+=1
+                    else:
+                        print('wrong input')
+        elif 20000< b<=50000:
+            print('for insurance of 100000 enter 1')
+            print('for insurance of 1000000 enter 2')
+            print('for insurance of 1crore+ enter 3')
+            c=int(input('enter-->'))
+            p-=1
+            if c == 1:
+                print('the life insurance for you is at 1000Rs pm')
+                t=0
+                while t<1:
+                    d=input('do you want to take insurance y/n-->')
+                    if d=='y':
+                        t+=1
+                        print('congralutation insurance approved')
+                    elif d=='n':
+                        print('thank you')
+                        t+=1
+                    else:
+                        print('wrong input')
+            elif c == 2:
+                print('the life insurance for you is at 1500Rs pm')
+                t=0
+                while t<1:
+                    d=input('do you want to take insurance y/n-->')
+                    if d=='y':
+                        t+=1
+                        print('congralutation insurance approved')
+                    elif d=='n':
+                        print('thank you')
+                        t+=1
+                    else:
+                        print('wrong input')
+            elif c == 3:
+                print('the life insurance for you is at 2000Rs pm')
+                t=0
+                while t<1:
+                    d=input('do you want to take insurance y/n-->')
+                    if d=='y':
+                        t+=1
+                        print('congralutation insurance approved')
+                    elif d=='n':
+                        print('thank you')
+                        t+=1
+                    else:
+                        print('wrong input')
+        elif b>50000 and b<100000: 
+            print('for insurance of 100000 enter 1')
+            print('for insurance of 1000000 enter 2')
+            print('for insurance of 1crore+ enter 3')
+            c=int(input('enter-->'))
+            p-=1
+            if c == 1:
+                print('the life insurance for you is at 1000qeRs pm')
+                t=0
+                while t<1:
+                    d=input('do you want to take insurance y/n-->')
+                    if d=='y':
+                        t+=1
+                        print('congralutation insurance approved')
+                    elif d=='n':
+                        print('thank you')
+                        t+=1
+                    else:
+                        print('wrong input')
+            elif c == 2:
+                print('the life insurance for you is at 500Rs pm')
+                t=0
+                while t<1:
+                    d=input('do you want to take insurance y/n-->')
+                    if d=='y':
+                        t+=1
+                        print('congralutation insurance approved')
+                    elif d=='n':
+                        print('thank you')
+                        t+=1
+                    else:
+                        print('wrong input')
+            elif c == 3:
+                print('the life insurance for you is at 1000Rs pm')
+                t=0
+                while t<1:
+                    d=input('do you want to take insurance y/n-->')
+                    if d=='y':
+                        t+=1
+                        print('congralutation insurance approved')
+                    elif d=='n':
+                        print('thank you')
+                        t+=1
+                    else:
+                        print('wrong input')        
+        else:
+            print('wrong input')
+    elif a == 5:
+        print('balance-->',j1[y1][2])
+        x=int(input('enter amount to be withdrawl-->'))
+        if j1[y1][2]>x:
+            p-=1
+            print('new balance-->',j1[y1][2]-x)    
+            print('congratulation withdrawl is successful')
+        else:
+            print ('insufficient balance')
+    elif a == 6:
+        print('balance-->',j1[y1][2])
+    elif a==7:
+        print('thanks for using')
+        break
+    else:
+        print('input is wrong')
+        print()
